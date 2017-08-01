@@ -60,9 +60,9 @@ class SOMNetwork():
 #== Test SOM Network ==
 
 def test_som_with_color_data():
-	som_dim = 20
+	som_dim = 100
 	som = SOMNetwork(input_dim=3, dim=som_dim, dtype=tf.float64, sigma=3)
-	test_data = np.random.uniform(0, 1, (150000, 3))
+	test_data = np.random.uniform(0, 1, (250000, 3))
 	training_op, lr_summary, sigma_summary = som.training_op()
 	init = tf.global_variables_initializer()
 	writer = tf.summary.FileWriter('./logs/', tf.get_default_graph())
