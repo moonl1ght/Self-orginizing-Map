@@ -1,2 +1,2 @@
-# Self-orginizing-Map-SOM-
+# Self Orginizing Map (SOM)
 Self orginizing map with tensorflow and python
